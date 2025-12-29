@@ -1,6 +1,9 @@
 # RadonOS
-![RadonOS Dashboard](Github-Assets/UI/WebUI.png)
-
+<p align="center">
+  <img 
+    src="Github-Assets/UI/WebUI.png"
+  >
+</p>
 
 RadonOS is a lightweight, modular operating system built for modern ESP32-based boards.
 
