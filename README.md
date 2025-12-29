@@ -26,16 +26,20 @@ RadonOS focuses on:
 
 ---
 
-## 🧩 Supported Boards (Launch)
+## 🧩 Supported Boards and hardware
 
 ### Waveshare boards
 
-| Board                   | MCU      | Notes                    |
-| ----------------------- | -------- | ------------------------ |
-| ESP32-P4-Module-DEV-KIT | ESP32-P4 | Full-featured dev kit    |
-| ESP32-P4-Nano           | ESP32-P4 | Compact form factor      |
-| ESP32-P4-WIFI           | ESP32-P4 | WiFi-enabled variant     |
-| ESP32-P4-ETH            | ESP32-P4 | Ethernet-enabled variant |
+| Board                   | MCU      | Notes                          | Support       | Auto pin config | Manual Pin config |
+| ----------------------- | -------- | ------------------------------ |---------------| --------------- | ----------------- |
+| ESP32-P4-Module-DEV-KIT | ESP32-P4 | Full-featured dev-kit          |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
+| ESP32-P4-WIFI6-DEV-KIT  | ESP32-P4 | Full-featured dev-kit          |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
+| ESP32-P4-NANO           | ESP32-P4 | Compact form factor            |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
+| ESP32-P4-WIFI6          | ESP32-P4 | WiFi-enabled variant           |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
+| ESP32-P4-ETH            | ESP32-P4 | Ethernet-enabled variant       |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
+| ESP32-S3-ETH            | ESP32-S3 | Ethernet-enabled variant       |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
+| ESP32-S3-Mini           | ESP32-S3 | Small form factor WiFi-enabled |✅ At launch   | ❌ No          | ✅ Compatible     | 
+| ESP32-S3-Nano           | ESP32-S3 | WiFi-enabled dev-kit           |✅ At launch   | ❌ No          | ✅ Compatible     | 
 
 ### TerrariumX boards
 
@@ -43,21 +47,27 @@ RadonOS focuses on:
 | --------- | -------------------------- | ------------------------------ |
 | **TXDK0** | ESP32-P4 (dual-MCU design) | Reference board for TerrariumX |
 
-### General DevKits
+### General DevKits (will not use the Auto-Configuration of pins)
 
-| Family   | Supported | Notes                   |
-| -------- | --------- | ----------------------- |
-| ESP32-P4 | ✅         | Primary target platform |
-| ESP32-S3 | ✅         | Supported at launch     |
-| ESP32-S2 | ✅         | Supported at launch     |
+| Family   | Supported | Notes                                           |
+| -------- | --------- | ----------------------------------------------- |
+| ESP32-P4 | ✅         | Primary target platform                       |
+| ESP32-S3 | ✅         | Supported at launch                           |
+| ESP32-S2 | ✅         | Supported at launch                           |
 | ESP32-C6 | 🛠️         | Supported after 1.2 and by custom version only|
 | ESP32-C5 | 🛠️         | Supported after 1.2 and by custom version only|
 | ESP32-C3 | 🛠️         | Supported after 1.2 and by custom version only|
 | ESP32-C2 | 🛠️         | Supported after 1.2 and by custom version only|
-| ESP32    | 🛠️         | Supported in 1.1 (Attention to high loads)|
-| ESP8266  | ❌         | On EOL by Espressif     |
+| ESP32    | 🛠️         | Supported in 1.1 (Attention to high loads)    |
+| ESP8266  | ❌         | Too close to EOL by Espressif                 |
 
-> More boards and families will be added over time as RadonOS expands.
+> Specific board support may vary in capabilities depending on the hardware config of it.
+
+### General Requirements
+|           | MCU Family   | Flash  | PSRAM  | Connectivity         |
+| --------- | ------------ | ------ | ------ | -------------------- |
+| Suggested | ESP32-S2+    | >= 8MB | >= 1MB | WiFi and/or Ethernet |
+| Minimal   | ESP32+       | >= 4MB | >= 0MB | WiFi                 |
 
 ---
 
