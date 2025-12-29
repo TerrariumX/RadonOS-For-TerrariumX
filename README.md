@@ -49,17 +49,19 @@ RadonOS focuses on:
 
 ### General DevKits (will not use the Auto-Configuration of pins)
 
-| Family   | Supported | Notes                                           |
-| -------- | --------- | ----------------------------------------------- |
-| ESP32-P4 | ✅         | Primary target platform                       |
-| ESP32-S3 | ✅         | Supported at launch                           |
-| ESP32-S2 | ✅         | Supported at launch                           |
-| ESP32-C6 | 🛠️         | Supported after 1.2 and by custom version only|
-| ESP32-C5 | 🛠️         | Supported after 1.2 and by custom version only|
-| ESP32-C3 | 🛠️         | Supported after 1.2 and by custom version only|
-| ESP32-C2 | 🛠️         | Supported after 1.2 and by custom version only|
-| ESP32    | 🛠️         | Supported in 1.1 (Attention to high loads)    |
-| ESP8266  | ❌         | Too close to EOL by Espressif                 |
+| Family   | Supported | Notes                                                                                |
+| -------- | --------- | ----------------------------------------------------------------------------------- |
+| ESP32-P4 | ✅         | Primary target platform                                                            |
+| ESP32-S3 | ✅         | Supported at launch                                                                |
+| ESP32-S2 | ✅         | Supported at launch                                                                |
+| ESP32-C6 | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
+| ESP32-C61| 🛠️         | Supported after launch (v. >= 1.2)                                                 |
+| ESP32-C5 | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
+| ESP32-C3 | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
+| ESP32-C2 | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
+| ESP32-H2 | 🛠️         | Only for certain software variations and will be supported later than other modules|
+| ESP32    | 🛠️         | Supported in 1.1                                                                   |
+| ESP8266  | ❌         | Too close to EOL by Espressif                                                      |
 
 > Specific board support may vary in capabilities depending on the hardware config of it.
 
