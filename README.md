@@ -49,32 +49,34 @@ RadonOS focuses on:
 
 ### General DevKits (will not use the Auto-Configuration of pins)
 
-| Family             | Supported | Notes                                                                                |
-| ------------------ | --------- | ----------------------------------------------------------------------------------- |
-| ESP32-P4           | ✅         | Primary target platform                                                            |
-| ESP32-S3           | ✅         | Supported at launch                                                                |
-| ESP32-S2           | ✅         | Supported at launch                                                                |
-| ESP32-C6           | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
-| ESP32-C61          | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
-| ESP32-C5           | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
-| ESP32-C3           | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
-| ESP8685 (C3 Based) | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
-| ESP32-C2 (ESP8684) | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
-| ESP32-H2           | 🛠️         | Only for certain software variations and will be supported later than other modules|
-| ESP32              | 🛠️         | Supported in 1.1                                                                   |
-| ESP8266            | ❌         | Missing fundamental software component (FreeRTOS)                                  |
-| ESP8285            | ❌         | Missing fundamental software component (FreeRTOS)                                  |
-| ESP8089            | ❌         | EOL and Missing fundamental software component (FreeRTOS)                          |
+| Family             | Supported  | Notes                                                                               |
+| ------------------ | ---------- | ----------------------------------------------------------------------------------- | 
+| ESP32-P4           | ✅         | Primary target platform                                                             |
+| ESP32-S3           | ✅         | Supported at launch                                                                 |
+| ESP32-S2           | ✅         | Supported at launch                                                                 |
+| ESP32-C6           | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
+| ESP32-C61          | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
+| ESP32-C5           | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
+| ESP32-C3           | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
+| ESP8685 (C3 Based) | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
+| ESP32-C2 (ESP8684) | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
+| ESP32-H2           | 🛠️         | Only for certain software variations and will be supported later than other modules |
+| ESP32              | 🛠️         | Supported in 1.1                                                                    |
+| ESP8266            | ❌         | Missing fundamental software component (FreeRTOS)                                   |
+| ESP8285            | ❌         | Missing fundamental software component (FreeRTOS)                                   |
+| ESP8089 (ESP-01)   | ❌         | EOL and Missing fundamental software component (FreeRTOS), also, it is not an MCU   |
 
 > Specific board support may vary in capabilities depending on the board hardware configuration.
 
 > The ESP8266 and ESP8285 are not supported at launch because they are marked NRND by Espressif and lack full FreeRTOS support, which is a core requirement for RadonOS.
 
+> While RadonOS 1.0 is not based on FreeRTOS, updates as early as 1.1 will be based on it, and as such, hardware with no full FreeRTOS support will lose future support after only one update, so such hardware is excluded directly. 
+
 ### General Requirements
-|           | MCU Family          | Flash  | PSRAM  | Connectivity         | GPIO                                          |
-| --------- | ------------------- | ------ | ------ | -------------------- | --------------------------------------------- |
-| Suggested | ESP32-S2+           | >= 8MB | >= 1MB | WiFi and/or Ethernet | >= 9 Data GPIOs and 6 Power (3V3 / GND / VIN) |
-| Minimal   | Any ESP32-class SoC | >= 4MB | >= 0MB | WiFi                 | >= 3 Data GPIOs and 2 Power (3V3 / GND)       |
+|           | MCU Family          | Flash  | PSRAM  | Connectivity               | GPIO                                          |
+| --------- | ------------------- | ------ | ------ | -------------------------- | --------------------------------------------- |
+| Suggested | ESP32-S2+           | >= 8MB | >= 1MB | WiFi and/or Ethernet + BLE | >= 9 Data GPIOs and 6 Power (3V3 / GND / VIN) |
+| Minimal   | Any ESP32-class SoC | >= 4MB | >= 0MB | Any kind                   | >= 3 Data GPIOs and 2 Power (3V3 / GND)       |
 
 
 ---
@@ -83,7 +85,7 @@ RadonOS focuses on:
 
 RadonOS uses a **service-oriented architecture**:
 
-* Core kernel
+* Core kernel (Internally called Oganessium Kernel)
 * Hardware Abstraction Layer (HAL)
 * Independent system services (GPIO, Network, Storage, Sensors, Power, etc.)
 * Local WebUI server
