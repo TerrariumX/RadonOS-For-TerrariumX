@@ -26,7 +26,7 @@ RadonOS focuses on:
 
 ---
 
-## 🧩 Supported Boards and hardware
+## 🧩 Supported Boards and Hardware
 
 ### Waveshare boards
 
@@ -49,27 +49,33 @@ RadonOS focuses on:
 
 ### General DevKits (will not use the Auto-Configuration of pins)
 
-| Family   | Supported | Notes                                                                                |
-| -------- | --------- | ----------------------------------------------------------------------------------- |
-| ESP32-P4 | ✅         | Primary target platform                                                            |
-| ESP32-S3 | ✅         | Supported at launch                                                                |
-| ESP32-S2 | ✅         | Supported at launch                                                                |
-| ESP32-C6 | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
-| ESP32-C61| 🛠️         | Supported after launch (v. >= 1.2)                                                 |
-| ESP32-C5 | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
-| ESP32-C3 | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
-| ESP32-C2 | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
-| ESP32-H2 | 🛠️         | Only for certain software variations and will be supported later than other modules|
-| ESP32    | 🛠️         | Supported in 1.1                                                                   |
-| ESP8266  | ❌         | Too close to EOL by Espressif                                                      |
+| Family             | Supported | Notes                                                                                |
+| ------------------ | --------- | ----------------------------------------------------------------------------------- |
+| ESP32-P4           | ✅         | Primary target platform                                                            |
+| ESP32-S3           | ✅         | Supported at launch                                                                |
+| ESP32-S2           | ✅         | Supported at launch                                                                |
+| ESP32-C6           | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
+| ESP32-C61          | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
+| ESP32-C5           | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
+| ESP32-C3           | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
+| ESP8685 (C3 Based) | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
+| ESP32-C2 (ESP8684) | 🛠️         | Supported after launch (v. >= 1.2)                                                 |
+| ESP32-H2           | 🛠️         | Only for certain software variations and will be supported later than other modules|
+| ESP32              | 🛠️         | Supported in 1.1                                                                   |
+| ESP8266            | ❌         | Missing fundamental software component (FreeRTOS)                                  |
+| ESP8285            | ❌         | Missing fundamental software component (FreeRTOS)                                  |
+| ESP8089            | ❌         | EOL and Missing fundamental software component (FreeRTOS)                          |
 
-> Specific board support may vary in capabilities depending on the hardware config of it.
+> Specific board support may vary in capabilities depending on the board hardware configuration.
+
+> The ESP8266 and ESP8285 are not supported at launch because they are marked NRND by Espressif and lack full FreeRTOS support, which is a core requirement for RadonOS.
 
 ### General Requirements
-|           | MCU Family   | Flash  | PSRAM  | Connectivity         |
-| --------- | ------------ | ------ | ------ | -------------------- |
-| Suggested | ESP32-S2+    | >= 8MB | >= 1MB | WiFi and/or Ethernet |
-| Minimal   | ESP32+       | >= 4MB | >= 0MB | WiFi                 |
+|           | MCU Family          | Flash  | PSRAM  | Connectivity         | GPIO                                          |
+| --------- | ------------------- | ------ | ------ | -------------------- | --------------------------------------------- |
+| Suggested | ESP32-S2+           | >= 8MB | >= 1MB | WiFi and/or Ethernet | >= 9 Data GPIOs and 6 Power (3V3 / GND / VIN) |
+| Minimal   | Any ESP32-class SoC | >= 4MB | >= 0MB | WiFi                 | >= 3 Data GPIOs and 2 Power (3V3 / GND)       |
+
 
 ---
 
@@ -101,15 +107,43 @@ Despite the visual complexity, the WebUI is designed to stay lightweight and eff
 
 ---
 
-## 🔄 Updates & OTA
 
-RadonOS supports **GitHub-based update workflows** (experimental):
+### 🔄 Updates, OTA & long-term support
 
-* Version checks via remote JSON files
-* Firmware and WebUI updates
-* Designed for local network environments
+RadonOS uses a user-controlled update model.
 
-> OTA features are under active development and should be considered experimental.
+Updates are never forced: the system checks for updates only when explicitly requested, and applying them is always a conscious user action.
+
+When a board or firmware branch reaches **End Of Life (EOL)**, it enters a **Frozen** state:
+- The device remains fully functional
+- No new features or updates are provided
+- The last supported firmware version remains available
+- No forced updates, migrations, or shutdowns occur
+- The EOL / Frozen status is clearly reported in the local WebUI
+
+This approach prioritizes long-term stability and ensures that deployed systems can continue to operate reliably without unexpected changes.
+
+Based on Espressif’s **Longevity Commitment**, currently supported hardware will enter the **Frozen** state (no further updates) according to the following timeline:
+
+| SoC        | EOL Year | Currently supported |
+| ---------- | -------- | ------------------- |
+| ESP32-P4  | TBA      | ✅ Yes (initial)    |
+| ESP32-S3  | 2033     | ✅ Yes              |
+| ESP32-S2  | 2032     | ✅ Yes              |
+| ESP32-C6  | 2035     | ✅ Yes              |
+| ESP32-C61 | TBA      | ✅ Yes (initial)    |
+| ESP32-C5  | 2037     | ✅ Yes              |
+| ESP32-C3  | 2033     | ✅ Yes              |
+| ESP8685   | 2033     | ✅ Yes              |
+| ESP32-C2  | 2034     | ✅ Yes              |
+| ESP8684   | 2034     | ✅ Yes              |
+| ESP32-H2  | 2035     | ✅ Yes              |
+| ESP32     | 2031     | ✅ Yes              |
+
+> Models marked as **TBA** do not yet have an official EOL date, as they are not currently listed in Espressif’s longevity commitment.
+
+> Support for each device ends on **January 1st** of the year specified in the table.
+
 
 ---
 
