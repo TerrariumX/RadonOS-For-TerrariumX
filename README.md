@@ -72,7 +72,9 @@ RadonOS focuses on:
 
 > The ESP8266 and ESP8285 are not supported at launch because they are marked NRND by Espressif and lack full FreeRTOS support, which is a core requirement for RadonOS.
 
-> While RadonOS 1.0 is not based on FreeRTOS, updates as early as 1.1 will be based on it, and as such, hardware with no full FreeRTOS support will lose future support after only one update, so such hardware is excluded directly. 
+> While RadonOS 1.0 is not based on FreeRTOS, updates as early as 1.1 can be based on it, and as such, hardware with no full FreeRTOS support will lose future support after only one update, so such hardware is excluded directly.
+
+> Any Hardware that Espressif releases at CES-2026 will be places in the table above as soon as possible
 
 ### General Requirements
 |           | MCU Family          | Flash  | PSRAM  | Connectivity               | GPIO                                          |
