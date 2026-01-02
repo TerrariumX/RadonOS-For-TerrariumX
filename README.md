@@ -143,6 +143,8 @@ Based on Espressif’s **Longevity Commitment**, currently supported hardware wi
 | ESP8685   | 2033     | ✅ Yes              |
 | ESP32-C2  | 2034     | ✅ Yes              |
 | ESP8684   | 2034     | ✅ Yes              |
+| ESP32-H4  | TBA      | ❌ Not Yet          |
+| ESP32-H21 | TBA      | ❌ Not Yet          |
 | ESP32-H2  | 2035     | ✅ Yes              |
 | ESP32     | 2031     | ✅ Yes              |
 
