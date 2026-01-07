@@ -30,22 +30,22 @@ RadonOS focuses on:
 
 ### Waveshare boards
 
-| Board                   | MCU      | Notes                          | Support       | Auto pin config | Manual Pin config |
+| Board                   | MCU      | Notes                          | Support       | Auto Pin Config | Manual Pin config |
 | ----------------------- | -------- | ------------------------------ |---------------| --------------- | ----------------- |
-| ESP32-P4-Module-DEV-KIT | ESP32-P4 | Full-featured dev-kit          |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
-| ESP32-P4-WIFI6-DEV-KIT  | ESP32-P4 | Full-featured dev-kit          |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
-| ESP32-P4-NANO           | ESP32-P4 | Compact form factor            |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
-| ESP32-P4-WIFI6          | ESP32-P4 | WiFi-enabled variant           |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
-| ESP32-P4-ETH            | ESP32-P4 | Ethernet-enabled variant       |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
-| ESP32-S3-ETH            | ESP32-S3 | Ethernet-enabled variant       |✅ At launch   | ✅ Yes         | ✅ Compatible     | 
-| ESP32-S3-Mini           | ESP32-S3 | Small form factor WiFi-enabled |✅ At launch   | ❌ No          | ✅ Compatible     | 
-| ESP32-S3-Nano           | ESP32-S3 | WiFi-enabled dev-kit           |✅ At launch   | ❌ No          | ✅ Compatible     | 
+| ESP32-P4-Module-DEV-KIT | ESP32-P4 | Full-featured dev-kit          |✅ At launch   | ✅ Yes          | ✅ Compatible     | 
+| ESP32-P4-WIFI6-DEV-KIT  | ESP32-P4 | Full-featured dev-kit          |✅ At launch   | ✅ Yes          | ✅ Compatible     | 
+| ESP32-P4-NANO           | ESP32-P4 | Compact form factor            |✅ At launch   | ✅ Yes          | ✅ Compatible     | 
+| ESP32-P4-WIFI6          | ESP32-P4 | WiFi-enabled variant           |✅ At launch   | ✅ Yes          | ✅ Compatible     | 
+| ESP32-P4-ETH            | ESP32-P4 | Ethernet-enabled variant       |✅ At launch   | ✅ Yes          | ✅ Compatible     | 
+| ESP32-S3-ETH            | ESP32-S3 | Ethernet-enabled variant       |✅ At launch   | ✅ Yes          | ✅ Compatible     | 
+| ESP32-S3-Mini           | ESP32-S3 | Small form factor WiFi-enabled |✅ At launch   | ❌ No           | ✅ Compatible     | 
+| ESP32-S3-Nano           | ESP32-S3 | WiFi-enabled dev-kit           |✅ At launch   | ❌ No          |  ✅ Compatible     | 
 
 ### TerrariumX boards
 
-| Board     | MCU                        | Notes                          |
-| --------- | -------------------------- | ------------------------------ |
-| **TXDK0** | ESP32-P4 (dual-MCU design) | Reference board for TerrariumX |
+| Board     | MCU         | Notes                               | Support      | Auto Pin Config | Manual Pin Config |
+| --------- | ----------- | ----------------------------------- | ------------ | --------------- | ----------------- |
+| **TXDK0** | ESP32-P4 x2 | In house-engineered TerrarumX Board | ✅ At launch | ✅ Yes          | ✅ Compatible     | 
 
 ### General DevKits (will not use the Auto-Configuration of pins)
 
