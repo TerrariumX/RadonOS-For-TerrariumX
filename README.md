@@ -66,6 +66,7 @@ RadonOS focuses on:
 | ESP32-C3           | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
 | ESP8685 (C3 Based) | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
 | ESP32-C2 (ESP8684) | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
+| ESP32-N22          | ❓TBA      | Unreleased Module                                                                   |
 | ESP32-H21          | ❓TBA      | Unreleased Module                                                                   |
 | ESP32-H4           | ❓TBA      | Unreleased Module                                                                   |
 | ESP32-H2           | 🛠️         | Only for certain software variations and will be supported later than other modules |
