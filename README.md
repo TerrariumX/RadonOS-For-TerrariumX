@@ -121,32 +121,32 @@ Despite the visual complexity, the WebUI is designed to stay lightweight and eff
 ---
 
 
-### 🔄 Updates, OTA & long-term support
+## 🔄 Updates, OTA & long-term support
 
 RadonOS uses a user-controlled update model.
 
-## Major Updates 
+### Major Updates 
 
 RadonOS will receive major updates about every year, that include lots of new features, bugfixes, UI changes, software improvements, optimization (may be kinda buggy at release)
 
 Major updates can be recognized by a change in the first value for the version (like from 1.x.x to 2.x.x)
 
 
-## Cumulative updates
+### Cumulative updates
 
 RadonOS will receive cumulative updates, that can run on a monthly schedule, they mostly include bug fixes and minor UI changes, along optimizations and API changes.
 
 Cumulative release can be recognized from the second value of the version changing (like from x.1.x to x.2.x)
 
 
-## Minor Updates
+### Minor Updates
 
 RadonOS is also subject to minor releases, that can follow a weekly or daily schedule, they include minor bug fixes, no UI changes and optimizations
 
 They can be recognized from the third value of the version changing (like in x.x.0 to x.x.1)
 
 
-# Build number
+### Build number
 
 Build numbers in RadonOS are integer numbers that indicate the single modification of the code, they are usually present after the version: x.x.x xxxx where xxxx is the build number.
 
