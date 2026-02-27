@@ -55,25 +55,25 @@ RadonOS focuses on:
 
 ### General DevKits (will not use the Auto-Configuration of pins)
 
-| Family             | Supported  | Notes                                                                               |
-| ------------------ | ---------- | ----------------------------------------------------------------------------------- | 
-| ESP32-P4           | ✅         | Primary target platform                                                             |
-| ESP32-S3           | ✅         | Supported at launch                                                                 |
-| ESP32-S2           | ✅         | Supported at launch                                                                 |
-| ESP32-C6           | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
-| ESP32-C61          | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
-| ESP32-C5           | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
-| ESP32-C3           | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
-| ESP8685 (C3 Based) | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
-| ESP32-C2 (ESP8684) | 🛠️         | Supported after launch (v. >= 1.2)                                                  |
-| ESP32-N22          | ❓TBA      | Unreleased Module                                                                   |
-| ESP32-H21          | ❓TBA      | Unreleased Module                                                                   |
-| ESP32-H4           | ❓TBA      | Unreleased Module                                                                   |
-| ESP32-H2           | 🛠️         | Only for certain software variations and will be supported later than other modules |
-| ESP32              | 🛠️         | Supported in 1.1                                                                    |
-| ESP8266            | ❌         | Missing fundamental software component (FreeRTOS)                                   |
-| ESP8285            | ❌         | Missing fundamental software component (FreeRTOS)                                   |
-| ESP8089 (ESP-01)   | ❌         | EOL and Missing fundamental software component (FreeRTOS), also, it is not an MCU   |
+| Family             | Supported  | Notes                                                                                  |
+| ------------------ | ---------- | -------------------------------------------------------------------------------------- | 
+| ESP32-P4           | ✅         | Primary target platform                                                                | 
+| ESP32-S3           | ✅         | Supported at launch                                                                    |
+| ESP32-S2           | ✅         | Supported at launch                                                                    |
+| ESP32-C6           | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
+| ESP32-C61          | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
+| ESP32-C5           | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
+| ESP32-C3           | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
+| ESP8685 (C3 Based) | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
+| ESP32-C2 (ESP8684) | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
+| ESP32-H22          | ❓TBA      | Unreleased Module                                                                      |
+| ESP32-H21          | ❓TBA      | Unreleased Module                                                                      |
+| ESP32-H4           | ❓TBA      | Unreleased Module                                                                      |
+| ESP32-H2           | 🛠️         | Only for certain software variations and will be supported later than other modules    |
+| ESP32              | 🛠️         | Supported in 1.1                                                                       |
+| ESP8266            | ❌         | Missing fundamental software component (FreeRTOS)                                      |
+| ESP8285            | ❌         | Missing fundamental software component (FreeRTOS)                                      |
+| ESP8089 (ESP-01)   | ❌         | EOL and Missing fundamental software component (FreeRTOS), also, it is not programmable|
 
 > Specific board support may vary in capabilities depending on the board hardware configuration.
 
@@ -125,6 +125,34 @@ Despite the visual complexity, the WebUI is designed to stay lightweight and eff
 
 RadonOS uses a user-controlled update model.
 
+## Major Updates 
+
+RadonOS will receive major updates about every year, that include lots of new features, bugfixes, UI changes, software improvements, optimization (may be kinda buggy at release)
+
+Major updates can be recognized by a change in the first value for the version (like from 1.x.x to 2.x.x)
+
+
+## Cumulative updates
+
+RadonOS will receive cumulative updates, that can run on a monthly schedule, they mostly include bug fixes and minor UI changes, along optimizations and API changes.
+
+Cumulative release can be recognized from the second value of the version changing (like from x.1.x to x.2.x)
+
+
+## Minor Updates
+
+RadonOS is also subject to minor releases, that can follow a weekly or daily schedule, they include minor bug fixes, no UI changes and optimizations
+
+They can be recognized from the third value of the version changing (like in x.x.0 to x.x.1)
+
+
+# Build number
+
+Build numbers in RadonOS are integer numbers that indicate the single modification of the code, they are usually present after the version: x.x.x xxxx where xxxx is the build number.
+
+This value will change every release.
+
+
 Updates are never forced: the system checks for updates only when explicitly requested, and applying them is always a conscious user action.
 
 When a board or firmware branch reaches **End Of Life (EOL)**, it enters a **Frozen** state:
@@ -141,6 +169,7 @@ Based on Espressif’s **Longevity Commitment**, currently supported hardware wi
 | SoC        | EOL Year | Currently supported |
 | ---------- | -------- | ------------------- |
 | ESP32-P4  | TBA      | ✅ Yes (initial)    |
+| ESP32-E22 | TBA      | ❌ Not Yet          |
 | ESP32-S3  | 2033     | ✅ Yes              |
 | ESP32-S2  | 2032     | ✅ Yes              |
 | ESP32-C6  | 2035     | ✅ Yes              |
