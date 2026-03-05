@@ -60,17 +60,17 @@ RadonOS focuses on:
 | ESP32-P4           | ✅         | Primary target platform                                                                | 
 | ESP32-S3           | ✅         | Supported at launch                                                                    |
 | ESP32-S2           | ✅         | Supported at launch                                                                    |
-| ESP32-C6           | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
-| ESP32-C61          | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
-| ESP32-C5           | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
-| ESP32-C3           | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
-| ESP8685 (C3 Based) | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
-| ESP32-C2 (ESP8684) | 🛠️         | Supported after launch (v. >= 1.2)                                                     |
+| ESP32-C6           | 🛠️         | Supported after update                                                                 |
+| ESP32-C61          | 🛠️         | Supported after update                                                                 |
+| ESP32-C5           | 🛠️         | Supported after update                                                                 |
+| ESP32-C3           | 🛠️         | Supported after update                                                                 |
+| ESP8685 (C3 Based) | 🛠️         | Supported after update                                                                 |
+| ESP32-C2 (ESP8684) | 🛠️         | Supported after update                                                                 |
+| ESP32-H2           | 🛠️         | Only for certain software variations and will be supported later than other modules    |
+| ESP32              | 🛠️         | Supported soon after launch                                                            |
 | ESP32-E22          | ❓TBA      | Unreleased Module                                                                      |
 | ESP32-H21          | ❓TBA      | Unreleased Module                                                                      |
 | ESP32-H4           | ❓TBA      | Unreleased Module                                                                      |
-| ESP32-H2           | 🛠️         | Only for certain software variations and will be supported later than other modules    |
-| ESP32              | 🛠️         | Supported in 1.1                                                                       |
 | ESP8266            | ❌         | Missing fundamental software component (FreeRTOS)                                      |
 | ESP8285            | ❌         | Missing fundamental software component (FreeRTOS)                                      |
 | ESP8089 (ESP-01)   | ❌         | EOL and Missing fundamental software component (FreeRTOS), also, it is not programmable|
