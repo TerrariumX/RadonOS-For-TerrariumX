@@ -168,21 +168,21 @@ Based on Espressif’s **Longevity Commitment**, currently supported hardware wi
 
 | SoC        | EOL Year | Currently supported |
 | ---------- | -------- | ------------------- |
-| ESP32-P4  | TBA      | ✅ Yes (initial)    |
-| ESP32-E22 | TBA      | ❌ Not Yet          |
-| ESP32-S3  | 2033     | ✅ Yes              |
-| ESP32-S2  | 2032     | ✅ Yes              |
-| ESP32-C6  | 2035     | ✅ Yes              |
-| ESP32-C61 | TBA      | ✅ Yes (initial)    |
-| ESP32-C5  | 2037     | ✅ Yes              |
-| ESP32-C3  | 2033     | ✅ Yes              |
-| ESP8685   | 2033     | ✅ Yes              |
-| ESP32-C2  | 2034     | ✅ Yes              |
-| ESP8684   | 2034     | ✅ Yes              |
-| ESP32-H4  | TBA      | ❌ Not Yet          |
-| ESP32-H21 | TBA      | ❌ Not Yet          |
-| ESP32-H2  | 2035     | ✅ Yes              |
-| ESP32     | 2031     | ✅ Yes              |
+| ESP32-P4   | 2037     | ✅ Yes (initial)    |
+| ESP32-E22  | TBA      | ❌ Not Yet          |
+| ESP32-S3   | 2033     | ✅ Yes              |
+| ESP32-S2   | 2032     | ✅ Yes              |
+| ESP32-C6   | 2035     | ✅ Yes              |
+| ESP32-C61  | TBA      | ✅ Yes (initial)    |
+| ESP32-C5   | 2037     | ✅ Yes              |
+| ESP32-C3   | 2033     | ✅ Yes              |
+| ESP8685    | 2033     | ✅ Yes              |
+| ESP32-C2   | 2034     | ✅ Yes              |
+| ESP8684    | 2034     | ✅ Yes              |
+| ESP32-H4   | TBA      | ❌ Not Yet          |
+| ESP32-H21  | TBA      | ❌ Not Yet          |
+| ESP32-H2   | 2035     | ✅ Yes              |
+| ESP32      | 2031     | ✅ Yes              |
 
 > Models marked as **TBA** do not yet have an official EOL date, as they are not currently listed in Espressif’s longevity commitment.
 
