@@ -36,44 +36,44 @@ RadonOS focuses on:
 
 ### Waveshare boards
 
-| Board                   | MCU      | Notes                          | Support | Auto Pin Config | Manual Pin config |
-| ----------------------- | -------- | ------------------------------ | ------- | --------------- | ----------------- |
-| ESP32-P4-Module-DEV-KIT | ESP32-P4 | Full-featured dev-kit          |✅       | ✅             | ✅ Compatible     | 
-| ESP32-P4-WIFI6-DEV-KIT  | ESP32-P4 | Full-featured dev-kit          |✅       | ✅             | ✅ Compatible     | 
-| ESP32-P4-NANO           | ESP32-P4 | Compact form factor            |✅       | ✅             | ✅ Compatible     | 
-| ESP32-P4-WIFI6          | ESP32-P4 | WiFi-enabled variant           |✅       | ✅             | ✅ Compatible     | 
-| ESP32-P4-ETH            | ESP32-P4 | Ethernet-enabled variant       |✅       | ✅             | ✅ Compatible     | 
-| ESP32-S3-ETH            | ESP32-S3 | Ethernet-enabled variant       |✅       | ✅             | ✅ Compatible     | 
-| ESP32-S3-Mini           | ESP32-S3 | Small form factor WiFi-enabled |✅       | ❌             | ✅ Compatible     | 
-| ESP32-S3-Nano           | ESP32-S3 | WiFi-enabled dev-kit           |✅       | ❌             | ✅ Compatible     | 
+| Board                   | MCU      | Notes                          | Support | Tested |
+| ----------------------- | -------- | ------------------------------ | ------- | ------ |
+| ESP32-P4-Module-DEV-KIT | ESP32-P4 | Full-featured dev-kit          |✅       | ✅    |
+| ESP32-P4-WIFI6-DEV-KIT  | ESP32-P4 | Full-featured dev-kit          |✅       | ❌    |
+| ESP32-P4-NANO           | ESP32-P4 | Compact form factor            |✅       | ❌    |
+| ESP32-P4-WIFI6          | ESP32-P4 | WiFi-enabled variant           |✅       | ❌    |
+| ESP32-P4-ETH            | ESP32-P4 | Ethernet-enabled variant       |✅       | ❌    |
+| ESP32-S3-ETH            | ESP32-S3 | Ethernet-enabled variant       |✅       | ❌    |
+| ESP32-S3-Mini           | ESP32-S3 | Small form factor WiFi-enabled |✅       | ❌    |
+| ESP32-S3-Nano           | ESP32-S3 | WiFi-enabled dev-kit           |✅       | ❌    |
 
 ### TerrariumX boards
 
-| Board          | MCU         | Notes                               | Support      | Auto Pin Config | Manual Pin Config |
-| -------------- | ----------- | ----------------------------------- | ------------ | --------------- | ----------------- |
-| **TXMB-P4-R1** | ESP32-P4 x2 | In house-engineered TerrarumX Board | ✅ At launch | ✅ Yes          | ✅ Compatible     | 
+| Board          | MCU         | Notes                               | Support      | Tested |
+| -------------- | ----------- | ----------------------------------- | ------------ | ------ |
+| **TXMB-P4-R1** | ESP32-P4 x2 | In house-engineered TerrarumX Board | ✅ (v1.0)   | ❌     |
 
-### General DevKits (will not use the Auto-Configuration of pins)
+### General DevKits
 
-| Family             | Supported  | Notes                                                                                  |
-| ------------------ | ---------- | -------------------------------------------------------------------------------------- | 
-| ESP32-P4           | ✅         | Primary target platform                                                                | 
-| ESP32-S3           | ✅         | Supported at launch                                                                    |
-| ESP32-S2           | ✅         | Supported at launch                                                                    |
-| ESP32-C6           | 🛠️         | Supported after update                                                                 |
-| ESP32-C61          | 🛠️         | Supported after update                                                                 |
-| ESP32-C5           | 🛠️         | Supported after update                                                                 |
-| ESP32-C3           | 🛠️         | Supported after update                                                                 |
-| ESP8685 (C3 Based) | 🛠️         | Supported after update                                                                 |
-| ESP32-C2 (ESP8684) | 🛠️         | Supported after update                                                                 |
-| ESP32-H2           | 🛠️         | Only for certain software variations and will be supported later than other modules    |
-| ESP32              | 🛠️         | Supported soon after launch                                                            |
-| ESP32-E22          | ❓TBA      | Unreleased Module                                                                      |
-| ESP32-H21          | ❓TBA      | Unreleased Module                                                                      |
-| ESP32-H4           | ❓TBA      | Unreleased Module                                                                      |
-| ESP8266            | ❌         | Missing fundamental software component (FreeRTOS)                                      |
-| ESP8285            | ❌         | Missing fundamental software component (FreeRTOS)                                      |
-| ESP8089 (ESP-01)   | ❌         | EOL and Missing fundamental software component (FreeRTOS), also, it is not programmable|
+| Family             | Supported  | Tested in Preview Builds? | Notes                                                                                  |
+| ------------------ | ---------- | ------------------------- | -------------------------------------------------------------------------------------- | 
+| ESP32-P4           | ✅         | ✅                       | Primary target platform                                                                | 
+| ESP32-S3           | ✅         | ✅                       | Supported at launch                                                                    |
+| ESP32-S2           | ✅         | ❌                       | Supported at launch                                                                    |
+| ESP32-C6           | 🛠️         | ✅                       | Supported after update                                                                 |
+| ESP32-C61          | 🛠️         | ❌                       | Supported after update                                                                 |
+| ESP32-C5           | 🛠️         | ✅                       | Supported after update                                                                 |
+| ESP32-C3           | 🛠️         | ❌                       | Supported after update                                                                 |
+| ESP8685 (C3 Based) | 🛠️         | ❌                       | Supported after update                                                                 |
+| ESP32-C2 (ESP8684) | 🛠️         | ❌                       | Supported after update                                                                 |
+| ESP32-H2           | 🛠️         | ❌                       | Only for certain software variations and will be supported later than other modules    |
+| ESP32              | 🛠️         | ❌                       | Supported soon after launch                                                            |
+| ESP32-E22          | ❓TBA      | ❌                       | Unreleased Module                                                                      |
+| ESP32-H21          | ❓TBA      | ❌                       | Unreleased Module                                                                      |
+| ESP32-H4           | ❓TBA      | ❌                       | Unreleased Module                                                                      |
+| ESP8266            | ❌         | ❌                       | Missing fundamental software component (FreeRTOS)                                      |
+| ESP8285            | ❌         | ❌                       | Missing fundamental software component (FreeRTOS)                                      |
+| ESP8089 (ESP-01)   | ❌         | ❌                       | EOL and Missing fundamental software component (FreeRTOS), also, it is not programmable|
 
 > Specific board support may vary in capabilities depending on the board hardware configuration.
 
@@ -152,7 +152,8 @@ Build numbers in RadonOS are integer numbers that indicate the single modificati
 
 This value will change every release.
 
-
+### Software EOL for RadonOS
++
 Updates are never forced: the system checks for updates only when explicitly requested, and applying them is always a conscious user action.
 
 When a board or firmware branch reaches **End Of Life (EOL)**, it enters a **Frozen** state:
