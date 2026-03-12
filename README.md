@@ -49,9 +49,9 @@ RadonOS focuses on:
 
 ### TerrariumX boards
 
-| Board          | MCU         | Notes                               | Support      | Tested |
-| -------------- | ----------- | ----------------------------------- | ------------ | ------ |
-| **TXMB-P4-R1** | ESP32-P4 x2 | In house-engineered TerrarumX Board | ✅ (v1.0)   | ❌     |
+| Board          | MCU         | Notes                               | Support      | Tested | Board Ready |
+| -------------- | ----------- | ----------------------------------- | ------------ | ------ | ----------- |
+| **TXMB-P4-R1** | ESP32-P4    | In house-engineered TerrarumX Board | ✅ (v1.0)   | ❌     | ❌         |
 
 ### General DevKits
 
