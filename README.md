@@ -71,17 +71,12 @@ RadonOS focuses on:
 | ESP32-E22          | ❓TBA      | ❌                       | Unreleased Module                                                                      |
 | ESP32-H21          | ❓TBA      | ❌                       | Unreleased Module                                                                      |
 | ESP32-H4           | ❓TBA      | ❌                       | Unreleased Module                                                                      |
-| ESP8266            | ❌         | ❌                       | Missing fundamental software component (FreeRTOS)                                      |
-| ESP8285            | ❌         | ❌                       | Missing fundamental software component (FreeRTOS)                                      |
-| ESP8089 (ESP-01)   | ❌         | ❌                       | EOL and Missing fundamental software component (FreeRTOS), also, it is not programmable|
 
 > Specific board support may vary in capabilities depending on the board hardware configuration.
 
 > The ESP8266 and ESP8285 are not supported at launch because they are marked NRND by Espressif and lack full FreeRTOS support, which is a core requirement for RadonOS.
 
-> While RadonOS 1.0 is not based on FreeRTOS, updates as early as 1.1 can be based on it, and as such, hardware with no full FreeRTOS support will lose future support after only one update, so such hardware is excluded directly.
-
-> Any Hardware that Espressif releases at CES-2026 will be places in the table above as soon as possible
+> Any Hardware that Espressif releases later on will be placed in the table above as soon as possible
 
 ### General Requirements
 |           | MCU Family          | Flash  | PSRAM  | Connectivity               | GPIO                                          |
