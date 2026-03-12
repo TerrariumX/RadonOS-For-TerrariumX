@@ -153,7 +153,7 @@ Build numbers in RadonOS are integer numbers that indicate the single modificati
 This value will change every release.
 
 ### Software EOL for RadonOS
-+
+
 Updates are never forced: the system checks for updates only when explicitly requested, and applying them is always a conscious user action.
 
 When a board or firmware branch reaches **End Of Life (EOL)**, it enters a **Frozen** state:
